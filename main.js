@@ -24,18 +24,11 @@ function currentFunction (){
 var intID = window.setInterval(currentFunction, 1000);
 
 
-
-//////////////////////////////////////////////////
-
-
+/////////////////////
 
 
 
 vColor = document.querySelector('.color');
-vColor.style.backgroundColor = 'red';
-vColor.style.color = 'orange';
-
-
 
 
 function colorFunction (){
@@ -50,30 +43,14 @@ function colorFunction (){
 	colorMinutes = ( colorMinutes < 10 ? "0" : "" ) + colorMinutes;
 	colorSeconds = ( colorSeconds < 10 ? "0" : "" ) + colorSeconds;
 
-	vColor.innerHTML = "#" + colorHours + colorMinutes + colorSeconds;
-
+	var colorCode= "#" + colorHours + colorMinutes + colorSeconds;
+	vColor.innerHTML =  colorCode;
+	vColor.style.backgroundColor = colorCode;
 
 }
 
 
 var intID = window.setInterval(colorFunction, 1000);
-
-
-
-////////
-
-
-// function updatedColor (){
-// 	var red = colorFunction();
-// }
-
-// document.querySelector('.color').style.backgroundColor = # red;
-
-
-// var intID2 = window.setInterval(updatedColor, 1000);
-
-
-
 
 
 
