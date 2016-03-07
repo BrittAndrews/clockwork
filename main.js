@@ -1,6 +1,5 @@
-var vTime, vColor, vHardmode;
+var vTime, vColor;
 
-// cHardmode = document.querySelector(".hardmode");
 
 vTime = document.querySelector(".time");
 
